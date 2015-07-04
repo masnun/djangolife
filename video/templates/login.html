@@ -1,0 +1,15 @@
+{% extends 'master.html' %}
+
+
+{% block body %}
+    <form method="POST">
+
+        {{ form.as_p }}
+
+        <input type="submit" value="Login">
+
+        {% csrf_token %}
+
+    </form>
+
+{% endblock %}

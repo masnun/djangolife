@@ -1,0 +1,13 @@
+{% extends 'master.html' %}
+
+{% block body %}
+
+    <form method="POST">
+
+        {{ form.as_p }}
+
+        <input type="submit" value="Register">
+        {% csrf_token %}
+    </form>
+
+{% endblock %}
